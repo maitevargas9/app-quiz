@@ -35,7 +35,10 @@ export default function QuizPage() {
 
   function nextQuestion() {
     resetTimer();
-    if (currentIndex + 1 >= questions.length) {
+
+    const nextIndex = currentIndex + 1;
+
+    if (nextIndex >= questions.length) {
       dispatch(finishQuiz());
       navigate("/result");
     }
