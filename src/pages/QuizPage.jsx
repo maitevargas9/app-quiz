@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setQuestions, answerQuestion, finishQuiz } from "../store/quizSlice";
@@ -41,7 +41,9 @@ export default function QuizPage() {
     }
   }
 
-  if (!questions.length) return <p>Lade Frage...</p>;
+  if (!questions.length) {
+    return <p>Lade Frage...</p>;
+  }
   const q = questions[currentIndex];
 
   return (
