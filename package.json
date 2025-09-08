@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://maitevargas9.github.io/app-quiz",
+  "homepage": "https://maitevargas9.github.io/app-quiz/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

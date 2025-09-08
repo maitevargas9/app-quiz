@@ -26,14 +26,14 @@ export default function ResultPage() {
   return (
     <Layout>
       <Card>
-        <h1 className="text-2xl mb-4">Ergebnis</h1>
+        <h1 className="text-2xl mb-4">Result</h1>
         <p className="mb-4">
-          Du hast <strong>{score}</strong> von{" "}
-          <strong>{questions.length}</strong> richtig!
+          You have <strong>{score}</strong> of{" "}
+          <strong>{questions.length}</strong> correct!
         </p>
         <div className="flex gap-2">
-          <Button onClick={handleRestart}>Neu starten</Button>
-          <Button onClick={handleHighscores}>Highscores ansehen</Button>
+          <Button onClick={handleRestart}>Restart</Button>
+          <Button onClick={handleHighscores}>View highscores</Button>
         </div>
       </Card>
     </Layout>

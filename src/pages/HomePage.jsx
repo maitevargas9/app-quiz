@@ -17,16 +17,16 @@ export default function HomePage() {
   return (
     <Layout>
       <Card>
-        <h1 className="text-3xl mb-4">Willkommen beim Quiz 🎉</h1>
+        <h1 className="text-3xl mb-4">Welcome to the quiz 🎉</h1>
         <input
           type="text"
-          placeholder="Dein Name"
+          placeholder="Your name"
           value={name}
           onChange={e => setName(e.target.value)}
           className="border p-2 rounded w-full mb-4"
         />
         <Button onClick={handleStart} className="w-full">
-          Starten
+          Start
         </Button>
       </Card>
     </Layout>

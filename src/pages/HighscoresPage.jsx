@@ -18,7 +18,7 @@ export default function HighscoresPage() {
                 </li>
               )}
             </ul>
-          : <p className="mb-4">Noch keine Highscores vorhanden.</p>}
+          : <p className="mb-4">No high scores available yet.</p>}
       </Card>
     </Layout>
   );

@@ -16,7 +16,7 @@ export default function QuizPage() {
 
   useEffect(
     () => {
-      fetch("/data/questions.json")
+      fetch("./data/questions.json")
         .then(res => res.json())
         .then(data => dispatch(setQuestions(data)));
     },
@@ -45,7 +45,7 @@ export default function QuizPage() {
   }
 
   if (!questions.length) {
-    return <p>Lade Frage...</p>;
+    return <p>Load question...</p>;
   }
   const q = questions[currentIndex];
 
